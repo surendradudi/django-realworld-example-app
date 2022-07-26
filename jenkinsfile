@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    parameters{               
+            //  Choice On Picking The Branches 
+             choice(name: 'ENV', choices: ['master','00-seed','01-authentication','02-profiles','03-articles','04-comments','05-following','06-favoriting','07-tagging','08-pagination','09-filtering','dependabot/pip/djangorestframework-3.11.2','dependabot/pip/django-2.2.24'], description: 'Picking The Branch')         
+           }
+    stages{
+        stage('Deploy') {
+            steps{
+                sh ''' 
+                pwd
+                
+                '''
+            }
+        }
+    }
+}
