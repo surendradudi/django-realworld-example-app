@@ -9,6 +9,9 @@ pipeline{
             steps{
                 sh ''' 
                 pwd
+                cd django-realworld-example-app/
+                ls -lrtha
+                pwd
                 
                 '''
             }
